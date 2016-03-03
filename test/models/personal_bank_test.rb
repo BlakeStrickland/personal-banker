@@ -19,7 +19,10 @@ class PersonalBankTest < ActiveSupport::TestCase
   test "Last months total transactions" do
     assert_equal 1, PersonalBank.last_months_num
   end
-  test "Largest expense this month" do
+  test "Largest expense" do
     assert_equal 'IronYard', PersonalBank.largest_expense
+  end
+  test "Largest expense this month" do
+    assert_equal 'IronYard', PersonalBank.largest_expense_this_month
   end
 end

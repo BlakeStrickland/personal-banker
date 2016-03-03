@@ -30,6 +30,20 @@ class PersonalBank < ActiveRecord::Base
     self.all.each do |x|
       array1 << x.amount
     end
+    # h.each {|key, value| puts "#{key} is #{value}" }
+    hash[array1.max]
+  end
+  def self.largest_expense_this_month
+    array = self.all.select {|x| (x.created_at.mon - Time.now.mon ) == 0}
+    array1 = []
+    hash = {}
+    array.each do |x|
+      hash = {x.amount => x.exhanges}
+    end
+    array.each do |x|
+      array1 << x.amount
+    end
+    # h.each {|key, value| puts "#{key} is #{value}" }
     hash[array1.max]
   end
 end
