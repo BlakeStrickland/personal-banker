@@ -1,8 +1,8 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  amount: 10.00
-  exhanges: MyString
+  amount: 11.00
+  exhanges: IronYard
   description: MyText
 
 two:

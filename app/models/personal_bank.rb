@@ -21,4 +21,15 @@ class PersonalBank < ActiveRecord::Base
     array = self.all.select {|x| (x.created_at.mon - Time.now.mon ) == -1}
     array.count
   end
+  def self.largest_expense
+    array1= []
+    hash = {}
+    self.all.each do |x|
+      hash = {x.amount => x.exhanges}
+    end
+    self.all.each do |x|
+      array1 << x.amount
+    end
+    hash[array1.max]
+  end
 end
