@@ -10,4 +10,7 @@ class PersonalBankTest < ActiveSupport::TestCase
   test "total transactions" do
       assert_equal 3, PersonalBank.num_of_trans
   end
+  test "Total monthly transactions" do
+    assert_equal 20.00, PersonalBank.monthly_expenses
+  end
 end

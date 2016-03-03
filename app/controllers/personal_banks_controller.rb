@@ -1,6 +1,9 @@
 class PersonalBanksController < ApplicationController
   before_action :set_personal_bank, only: [:show, :edit, :update, :destroy]
 
+  def dashboard
+    @personal_banks = PersonalBank.all
+  end
   # GET /personal_banks
   # GET /personal_banks.json
   def index
