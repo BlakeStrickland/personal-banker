@@ -46,4 +46,7 @@ class PersonalBank < ActiveRecord::Base
     # h.each {|key, value| puts "#{key} is #{value}" }
     hash[array1.max]
   end
+  def self.spent_most_money_at
+    
+  end
 end

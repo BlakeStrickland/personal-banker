@@ -25,4 +25,7 @@ class PersonalBankTest < ActiveSupport::TestCase
   test "Largest expense this month" do
     assert_equal 'IronYard', PersonalBank.largest_expense_this_month
   end
+  test "Spent the most money at" do
+    assert_equal 'IronYard', PersonalBank.spent_most_money_at
+  end
 end
