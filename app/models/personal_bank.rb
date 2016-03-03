@@ -13,4 +13,8 @@ class PersonalBank < ActiveRecord::Base
     array = self.all.select {|x| (x.created_at.mon - Time.now.mon ) == 0}
     array.reduce(0.0) {|sum, x| sum + x.amount.to_f}
   end
+  def self.last_months_expenses
+    array = self.all.select {|x| (x.created_at.mon - Time.now.mon ) == -1}
+    array.reduce(0.0) {|sum, x| sum + x.amount.to_f}
+  end
 end
