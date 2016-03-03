@@ -1,0 +1,16 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  amount: 1.00
+  exhanges: MyString
+  description: MyText
+
+two:
+  amount: 10.00
+  exhanges: MyString
+  description: MyText
+
+three:
+  amount: 10.00
+  exhanges: MyString
+  description: MyText

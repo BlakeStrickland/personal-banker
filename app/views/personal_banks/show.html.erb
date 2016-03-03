@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @personal_bank.amount %>
+</p>
+
+<p>
+  <strong>Exhanges:</strong>
+  <%= @personal_bank.exhanges %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @personal_bank.description %>
+</p>
+
+<%= link_to 'Edit', edit_personal_bank_path(@personal_bank) %> |
+<%= link_to 'Back', personal_banks_path %>

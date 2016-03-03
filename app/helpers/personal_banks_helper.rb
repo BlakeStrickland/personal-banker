@@ -1,0 +1,2 @@
+module PersonalBanksHelper
+end
